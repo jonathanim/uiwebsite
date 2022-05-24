@@ -6,6 +6,7 @@
 @layer base {
     li {
         @apply p-4
+        hover:bg-indigo-600 hover:rounded-xl hover:transition-all hover:duration-[1000ms]
     }
 
 
