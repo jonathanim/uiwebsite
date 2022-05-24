@@ -1,10 +1,13 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-5xl font-bold">hello world</h1>
-    </div>
+    <>
+      <Header />
+      <Hero />
+    </>
   );
 }
 
