@@ -21,15 +21,15 @@ function About() {
         </div>
       </div>
       <div className="md:grid md:grid-cols-3 text-center justify-center items-center">
-        <div className="border p-6 rounded-xl bg-zinc-200 m-2 shadow-2xl">
+        <div className="border p-6 rounded-xl bg-zinc-200 shadow-2xl m-6">
           <h2 className="text-indigo-600 text-6xl font-bold">100%</h2>
           <p className="text-xl text-gray-700">Completion</p>
         </div>
-        <div className="border p-6 rounded-xl bg-zinc-200 m-2 shadow-2xl ">
+        <div className="border p-6 rounded-xl bg-zinc-200 shadow-2xl m-6">
           <h2 className="text-indigo-600 text-6xl font-bold">24/7</h2>
           <p className="text-xl text-gray-700">Support</p>
         </div>
-        <div className="border p-6 rounded-xl bg-zinc-200 m-2 shadow-2xl ">
+        <div className="border p-6 rounded-xl bg-zinc-200 shadow-2xl m-6">
           <h2 className="text-indigo-600 text-6xl font-bold">1M+</h2>
           <p className="text-xl text-gray-700">Transactions</p>
         </div>
