@@ -2,19 +2,21 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full my-8">
+    <div className="w-full my-8 ">
       <div className="flex flex-col text-center justify-center items-center my-5">
-        <h2 className=" flex text-4xl font-bold p-5">
+        <h2 className=" flex text-5xl font-bold p-5">
           Trusted by users accross the globe.
         </h2>
 
-        <div className="flex justify-center items-center w-96">
-          <h3 className="flex text-2xl p-10 text-center text-gray-500">
+        <div className="flex flex-col justify-center items-center md:grid grid-cols-2 text-center md:items-stretch">
+          <h3 className="grid text-2xl p-5 md:mx-auto m-5 bg-indigo-600 text-white rounded-xl md:w-[70%] shadow-2xl shadow-gray-400">
             Private clouds are typically more secure than public clouds, as
             they're usually dedicated to a single group or user and rely on that
-            group or user's firewall. The isolated nature of these clouds helps
-            them stay secure from outside attacks since they're only accessible
-            by one organization.
+            group or user's firewall.
+          </h3>
+          <h3 className="grid text-2xl p-5 md:mx-auto m-5 bg-indigo-600 text-white rounded-xl md:w-[70%] shadow-2xl shadow-gray-400">
+            The isolated nature of these clouds helps them stay secure from
+            outside attacks since they're only accessible by one organization.
           </h3>
         </div>
       </div>
