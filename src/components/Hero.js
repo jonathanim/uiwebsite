@@ -21,31 +21,31 @@ const Hero = () => {
           <button className="py-3 px-6 sm:w-[60%] my-4">Get Started</button>
         </div>
         <div>
-          <img className="w-full scale-[70%]" src={cyber} alt="/" />
+          <img className="w-full scale-[60%]" src={cyber} alt="/" />
         </div>
-        <div
-          className="md:absolute md:flex flex-col py-8 md:min-w-[760px] bottom-[15%] mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 md:bg-transparent rounded-xl text-center shadow-xl
+      </div>
+      <div
+        className="flex w-[60%] flex-col py-8 mx-auto bg-zinc-200 md:bg-transparent rounded-xl text-center shadow-xl
         "
-        >
-          <p className="text-2xl mb-5">Data Services</p>
-          <div className="block sm:flex justify-center items-center flex-wrap px-5 md:flex md:justify-between">
-            <p className="inline-block md:flex px-4 py2 text-slate-500">
-              <CloudUploadIcon className="inline-block h-6 text-indigo-600" />
-              App Security
-            </p>
-            <p className="inline-block md:flex px-4 py2 text-slate-500">
-              <DatabaseIcon className="inline-block h-6 text-indigo-600" />
-              Dashboard Design
-            </p>
-            <p className="inline-block md:flex px-4 py2 text-slate-500">
-              <ServerIcon className="inline-block h-6 text-indigo-600" />
-              Cloud Data
-            </p>
-            <p className="inline-block md:flex px-4 py2 text-slate-500">
-              <PaperAirplaneIcon className="inline-block h-6 text-indigo-600" />
-              API
-            </p>
-          </div>
+      >
+        <p className="text-2xl font-bold mb-5">Data Services</p>
+        <div className="flex justify-center items-center flex-wrap px-5 md:justify-between">
+          <p className="flex px-4 py2 text-slate-500">
+            <CloudUploadIcon className="h-6 text-indigo-600" />
+            App Security
+          </p>
+          <p className="flex px-4 py2 text-slate-500">
+            <DatabaseIcon className="h-6 text-indigo-600" />
+            Dashboard Design
+          </p>
+          <p className="flex px-4 py2 text-slate-500">
+            <ServerIcon className="h-6 text-indigo-600" />
+            Cloud Data
+          </p>
+          <p className="flex px-4 py2 text-slate-500">
+            <PaperAirplaneIcon className="h-6 text-indigo-600" />
+            API
+          </p>
         </div>
       </div>
     </div>
