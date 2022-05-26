@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full h-screen mt-14">
+    <div className="w-full h-fit md:h-full mt-14">
       <div className="flex flex-col text-center justify-center items-center my-5">
         <h2 className=" flex text-5xl font-bold p-5 my-10">
           Trusted by users accross the globe.
@@ -29,7 +29,7 @@ function About() {
           <h2 className="text-indigo-600 text-6xl font-bold">24/7</h2>
           <p className="text-xl text-gray-700">Support</p>
         </div>
-        <div className="border p-6 rounded-xl bg-zinc-200 shadow-2xl md:m-6">
+        <div className="border p-6 rounded-xl bg-zinc-200 shadow-2xl m-6">
           <h2 className="text-indigo-600 text-6xl font-bold">1M+</h2>
           <p className="text-xl text-gray-700">Transactions</p>
         </div>
