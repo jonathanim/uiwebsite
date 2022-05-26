@@ -14,8 +14,9 @@ const Header = () => {
           </h1>
           <ul className="hidden md:flex">
             <li href="">Home</li>
-            <li href="">Services</li>
-            <li href="">Contact</li>
+            <li href="">About</li>
+            <li href="">Support</li>
+            <li href="">Platform</li>
             <li href="">Pricing</li>
           </ul>
         </div>
@@ -25,7 +26,7 @@ const Header = () => {
           </button>
           <button className="px-8 py-3">Sign Up</button>
         </div>
-        <div className="md:hidden" onClick={handleClick}>
+        <div className="md:hidden mr-6" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </div>
