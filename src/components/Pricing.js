@@ -45,6 +45,9 @@ const Pricing = () => {
                 <p className="flex py-4">
                   <XIcon className="w-5 mr-4 text-red-600" /> IP Security
                 </p>
+                <button className="w-full py-2 font-bold self-end">
+                  Get started
+                </button>
               </div>
             </div>
             <div className="bg-slate-300 rounded-xl p-5 shadow-xl shadow-gray-700">
@@ -56,7 +59,7 @@ const Pricing = () => {
                   $69<span>/mo</span>
                 </p>
               </div>
-              <div>
+              <div className="flex flex-col justify-center items-start">
                 <p className="flex py-4">
                   <CheckIcon className="w-5 mr-4 text-green-500" /> Includes all
                   Basic Features
@@ -72,6 +75,9 @@ const Pricing = () => {
                   <XIcon className="w-5 mr-4 text-red-600" /> Anti Fraud
                   Protection
                 </p>
+                <button className="w-full py-2 font-bold self-end">
+                  Get started
+                </button>
               </div>
             </div>
             <div className="bg-slate-300 rounded-xl p-5 shadow-xl shadow-gray-700">
@@ -83,7 +89,7 @@ const Pricing = () => {
                   $99<span>/mo</span>
                 </p>
               </div>
-              <div>
+              <div className="flex flex-col justify-center items-start">
                 <p className="flex py-4">
                   <CheckIcon className="w-5 mr-4 text-green-500" /> Include all
                   Enhanced Features
@@ -93,13 +99,15 @@ const Pricing = () => {
                   Protection
                 </p>
                 <p className="flex py-4">
-                  <CheckIcon className="w-5 mr-4 text-green-500" /> CLoud
-                  management Tools
+                  <CheckIcon className="w-5 mr-4 text-green-500" /> Cloud Tools
                 </p>
                 <p className="flex py-4">
                   <CheckIcon className="w-5 mr-4 text-green-500" /> Unlimited
                   VPN Services
                 </p>
+                <button className="w-full py-2 font-bold self-end">
+                  Get started
+                </button>
               </div>
             </div>
           </div>
