@@ -8,12 +8,13 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="w-screen h-[75px] z-10 bg-zinc-200 fixed drop-shadow-lg mb-100px">
+    <div className="w-screen h-[75px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
           <h1 className="flex text-4xl mr-4 font-bold items-center sm:text-3xl">
             <LI to="/">UI-UX</LI>
           </h1>
+
           <ul className="hidden md:flex">
             <li>
               <Link to="hero" smooth={true} offset={50} duration={500}>
