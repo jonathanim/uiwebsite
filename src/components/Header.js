@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
-import { Link, Button, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import { Link as LI } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="w-screen h-[75px] z-10 bg-zinc-200 fixed drop-shadow-lg">
+    <div className="w-screen h-[75px] z-10 bg-zinc-200 fixed drop-shadow-lg mb-100px">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
           <h1 className="flex text-4xl mr-4 font-bold items-center sm:text-3xl">
-            UI-UX
+            <LI to="/">UI-UX</LI>
           </h1>
           <ul className="hidden md:flex">
             <li>
@@ -43,9 +44,12 @@ const Header = () => {
         </div>
         <div className="hidden md:flex pr-4">
           <button className="border-none bg-transparent text-black mr-4">
-            Sign In
+            <LI to="/login">Log in</LI>
           </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="px-8 py-3">
+            {" "}
+            <LI to="/register">Sign up</LI>
+          </button>
         </div>
         <div className="md:hidden mr-6" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
@@ -109,9 +113,12 @@ const Header = () => {
         </li>
         <div className="flex flex-col my-4">
           <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
-            Sign In
+            <LI to="/login">Log in</LI>
           </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="px-8 py-3">
+            {" "}
+            <LI to="/register">Sign up</LI>
+          </button>
         </div>
       </ul>
     </div>
