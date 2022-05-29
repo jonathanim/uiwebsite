@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-full h-fit md:h-full mt-14">
+    <div name="about" className="w-full h-fit md:h-full mt-14">
       <div className="flex flex-col text-center justify-center items-center my-5">
         <h2 className=" flex text-5xl font-bold p-5 my-10">
           Trusted by users accross the globe.

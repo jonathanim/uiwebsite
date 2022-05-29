@@ -3,7 +3,7 @@ import { CheckIcon, XIcon } from "@heroicons/react/solid";
 
 const Pricing = () => {
   return (
-    <div className="w-full">
+    <div name="pricing" className="w-full">
       <div className="w-full h-full bg-slate-800 mix-blend-overlay">
         <div className="max-w-[1050px] mx-auto my-15">
           <div className="text-center p-10">

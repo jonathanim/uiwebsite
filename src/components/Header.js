@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import { Link, Button, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -13,11 +14,31 @@ const Header = () => {
             UI-UX
           </h1>
           <ul className="hidden md:flex">
-            <li href="">Home</li>
-            <li href="">About</li>
-            <li href="">Support</li>
-            <li href="">Platform</li>
-            <li href="">Pricing</li>
+            <li>
+              <Link to="hero" smooth={true} offset={50} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="about" smooth={true} offset={-50} duration={500}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="support" smooth={true} offset={-100} duration={500}>
+                Support
+              </Link>
+            </li>
+            <li>
+              <Link to="platform" smooth={true} offset={-200} duration={500}>
+                Platform
+              </Link>
+            </li>
+            <li>
+              <Link to="pricing" smooth={true} offset={-50} duration={500}>
+                Pricing
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
@@ -31,17 +52,60 @@ const Header = () => {
         </div>
       </div>
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 border-zinc-200 w-full" href="">
-          Home
+        <li>
+          <Link
+            to="hero"
+            onClick={handleClick}
+            smooth={true}
+            offset={50}
+            duration={500}
+          >
+            Home
+          </Link>
         </li>
-        <li className="border-b-2 border-zinc-200 w-full" href="">
-          Services
+        <li>
+          <Link
+            to="about"
+            onClick={handleClick}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
-        <li className="border-b-2 border-zinc-200 w-full" href="">
-          Contact
+        <li>
+          <Link
+            to="support"
+            onClick={handleClick}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Support
+          </Link>
         </li>
-        <li className="border-b-2 border-zinc-200 w-full" href="">
-          Pricing
+        <li>
+          <Link
+            to="platform"
+            onClick={handleClick}
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
+            Platform
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="pricing"
+            onClick={handleClick}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            Pricing
+          </Link>
         </li>
         <div className="flex flex-col my-4">
           <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
